@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+#form {
+    background-color: burlywood;
+    border: 5px solid #eee;
+    width: 400px;
+}
+
+#submit_button {
+    margin-left: 160px;
+}
+
+#container {
+    display: flex;
+}
+
+#list {
+    margin: 20px 0 0 450px;
+}
+
+label {
+    margin-left: 100px;
+}
+
+input {
+    margin-left: 100px;
+}
+
+table {
+    width: 700px;
+    height: 80px;
+}
+
+th,
+td {
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+th td {
+    padding: 10px;
+}
+
+.hi {
+    visibility: hidden;
+}

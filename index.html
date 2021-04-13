@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SIGN UP FORM</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="form">
+            <form>
+                <h2 style="text-align: center;">GPA Calculator</h2>
+                <label for="username"><b>Fullname</b></label> <br>
+                <input type="text" placeholder="Enter Username" name="uname" id="username" required> <br> <br> <br>
+
+                <label for="useremail"><b>Department</b></label> <br>
+                <input type="text" placeholder="Enter Department" name="departments" id="userdepart" required> <br> <br> <br>
+
+                <label for="usercourses"><b>Add Course(s)</b></label> <br>
+                <input type="number" min="1" placeholder="Enter number" name="ucourse" id="course" required> <br> <br> <br>
+
+                <label for="userCourse"><b>Course code</b></label> <br>
+                <input type="text" placeholder="Enter course" name="ulocation" id="code" required> <br> <br> <br>
+
+                <label for="userpoints"><b>Select Points</b></label> <br>
+                <input type="number" min="1" placeholder="credit hours" name="ulocation" id="userpoints" required> <br> <br> <br>
+
+                <label for="userlocation"><b>Score out of hundred</b></label> <br>
+                <input type="number" min="1" placeholder="Enter score" name="ulocation" id="userscore" required> <br> <br> <br>
+
+                <input id="submit_button" type="button" name="submit" value="submit">
+                <input id="cal_button" type="button" name="Cal GPA" value="cal GPA"> <br> <br>
+
+
+            </form>
+        </div>
+
+        <div id="list">
+            <table>
+                <caption style="margin: 10px;"><b>Expected Values to be returned</b></caption>
+                <thead>
+                    <tr>
+                        <th>SN</th>
+                        <th>Course</th>
+                        <th>Points</th>
+                        <th>Score</th>
+                        <th>Weight</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <!-- discovery -->
+                <tfoot>
+                    <tr>
+                        <td class="hi"></td>
+                        <td class="hi"></td>
+                        <td id="tdpoints"></td>
+                        <td id="tdscore"></td>
+                        <td id="tdweight"></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <p id="view_name"><b>This paragraph will display student Fullname and the details below when "cal GPA" button is clicked</b></p>
+            <p id="view_depart"><b>This paragraph will display student's Department</b></p>
+            <p id="view_gpa"><b>This paragraph will display your GPA</b></p>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
